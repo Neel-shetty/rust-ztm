@@ -1,5 +1,14 @@
 fn main() {
-    compare_numbers();
+    matching();
+}
+
+fn matching(){
+    let a = 1;
+    match a {
+        5 => println!("its 5"),
+        6 => println!("its 6"),
+        _ => println!("its idk")
+    }
 }
 
 fn compare_numbers(){
