@@ -1,5 +1,22 @@
+use std::slice::range;
+
 fn main() {
-    matching();
+    loops();
+}
+
+fn loops(){
+    let mut a = 1;
+    loop {
+        if a == 5 {
+            break;
+        }
+        println!("{:?}",a);
+        a+=1;
+    }
+
+    for i in range(a,10) {
+
+    }
 }
 
 fn matching(){
