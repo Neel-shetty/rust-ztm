@@ -1,7 +1,20 @@
-use std::slice::range;
-
 fn main() {
-    loops();
+    enums();
+}
+
+enum Direction {
+    Left,
+    Right,
+    Up
+}
+
+fn enums(){
+    let go = Direction::Up;
+    match go {
+        Direction::Left => println!("left"),
+        Direction::Right => println!("Right"),
+        Direction::Up => println!("up")
+    }
 }
 
 fn loops(){
@@ -12,10 +25,6 @@ fn loops(){
         }
         println!("{:?}",a);
         a+=1;
-    }
-
-    for i in range(a,10) {
-
     }
 }
 
